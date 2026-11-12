@@ -160,18 +160,23 @@
 
             <!-- User Info & Logout -->
             <div class="p-4 border-t border-slate-800 bg-slate-950/40">
-                <div class="flex items-center justify-between mb-3">
-                    <div class="flex items-center gap-3 min-w-0">
-                        <div class="w-9 h-9 rounded-full bg-slate-700 flex items-center justify-center font-bold text-white text-sm">
-                            {{ substr(Auth::user()->name ?? 'U', 0, 1) }}
-                        </div>
-                        <div class="truncate">
-                            <p class="text-xs font-semibold text-white truncate">{{ Auth::user()->name ?? 'User' }}</p>
-                            <span class="inline-block px-1.5 py-0.5 text-[10px] rounded font-bold uppercase tracking-wider {{ Auth::user()->role === 'admin' ? 'bg-purple-900/60 text-purple-300' : 'bg-emerald-900/60 text-emerald-300' }}">
-                                {{ Auth::user()->role ?? 'Kasir' }}
-                            </span>
-                        </div>
+                <a href="{{ route('profile.index') }}" class="flex items-center gap-3 mb-3 group hover:opacity-90 transition">
+                    <div class="w-9 h-9 rounded-full bg-slate-700 flex items-center justify-center font-bold text-white text-sm group-hover:bg-brand-600 transition shrink-0">
+                        {{ substr(Auth::user()->name ?? 'U', 0, 1) }}
                     </div>
+                    <div class="truncate">
+                        <p class="text-xs font-semibold text-white truncate group-hover:text-indigo-300 transition">{{ Auth::user()->name ?? 'User' }}</p>
+                        <span class="inline-block px-1.5 py-0.5 text-[10px] rounded font-bold uppercase tracking-wider {{ Auth::user()->role === 'admin' ? 'bg-purple-900/60 text-purple-300' : 'bg-emerald-900/60 text-emerald-300' }}">
+                            {{ Auth::user()->role ?? 'Kasir' }}
+                        </span>
+                    </div>
+                </a>
+
+                <div class="space-y-1.5 mb-2">
+                    <a href="{{ route('profile.index') }}" class="w-full flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition">
+                        <i data-lucide="user-cog" class="w-3.5 h-3.5"></i>
+                        <span>Profil & Ganti Password</span>
+                    </a>
                 </div>
 
                 <form method="POST" action="{{ route('logout') }}">
@@ -209,6 +214,11 @@
                     <a href="{{ route('pos.index') }}" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold rounded-lg shadow-sm transition">
                         <i data-lucide="shopping-cart" class="w-4 h-4"></i>
                         <span>Buka Kasir</span>
+                    </a>
+
+                    <!-- Profile Link -->
+                    <a href="{{ route('profile.index') }}" title="Profil & Ganti Password" class="p-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition">
+                        <i data-lucide="user-cog" class="w-5 h-5"></i>
                     </a>
 
                     <!-- Status Badge -->
