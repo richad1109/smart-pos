@@ -99,6 +99,15 @@
                         <span class="text-[10px] text-slate-400">Transaksi & Struk</span>
                     </button>
                 </div>
+
+                <!-- Tombol Download APK Android -->
+                <div class="mt-4 pt-4 border-t border-slate-700/50">
+                    <a href="https://github.com/richad1109/smart-pos/releases" target="_blank"
+                       class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-semibold transition">
+                        <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+                        <span>📱 Versi Mobile: Download APK Android (Gratis)</span>
+                    </a>
+                </div>
             </div>
         </div>
 
