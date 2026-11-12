@@ -1,0 +1,17 @@
+{
+  "name": "SmartPOS - Coffee & Retail Management",
+  "short_name": "SmartPOS",
+  "description": "Sistem Kasir Pintar & Inventaris Retail Modern",
+  "start_url": "/login",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
