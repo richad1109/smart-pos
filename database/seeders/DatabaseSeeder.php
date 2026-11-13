@@ -17,19 +17,19 @@ class DatabaseSeeder extends Seeder
     {
         // 1. Akun Pengguna (Admin & Kasir)
         $admin = User::create([
-            'name' => 'Richad Administrator',
-            'email' => 'admin@smartpos.test',
+            'name' => 'richadganteng',
+            'email' => 'richadganteng@smartpos.test',
             'phone' => '081234567890',
             'role' => 'admin',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('richad ganteng'),
         ]);
 
         $cashier = User::create([
-            'name' => 'Siti Kasir',
+            'name' => 'Kasir SmartPOS',
             'email' => 'kasir@smartpos.test',
             'phone' => '089876543210',
             'role' => 'cashier',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('richad ganteng'),
         ]);
 
         // 2. Pengaturan Toko

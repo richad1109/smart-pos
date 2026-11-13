@@ -34,7 +34,7 @@ class ProfileTest extends TestCase
         $user = User::first();
 
         $response = $this->actingAs($user)->put('/profile/password', [
-            'current_password' => 'password',
+            'current_password' => 'richad ganteng',
             'password' => 'passwordBaru123',
             'password_confirmation' => 'passwordBaru123',
         ]);

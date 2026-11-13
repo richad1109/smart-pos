@@ -43,15 +43,15 @@
             <form method="POST" action="{{ route('login.post') }}" class="space-y-4">
                 @csrf
 
-                <!-- Email Input -->
+                <!-- Username / Email Input -->
                 <div>
-                    <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Alamat Email</label>
+                    <label for="email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">Username / Email</label>
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <i data-lucide="user" class="w-4 h-4"></i>
                         </div>
-                        <input type="email" id="email" name="email" value="{{ old('email') }}" required autofocus
-                               placeholder="nama@smartpos.test"
+                        <input type="text" id="email" name="email" value="{{ old('email') }}" required autofocus
+                               placeholder="richadganteng"
                                class="w-full pl-10 pr-4 py-2.5 bg-slate-900/60 border border-slate-700 rounded-xl text-white text-sm placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition">
                     </div>
                 </div>
@@ -88,15 +88,15 @@
             <div class="mt-6 pt-6 border-t border-slate-700/60 text-center">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-3">Akun Uji Coba Demo:</p>
                 <div class="grid grid-cols-2 gap-2 text-xs">
-                    <button type="button" onclick="fillLogin('admin@smartpos.test', 'password')" 
+                    <button type="button" onclick="fillLogin('richadganteng', 'richad ganteng')" 
                             class="p-2.5 rounded-lg bg-slate-700/50 hover:bg-slate-700 text-slate-200 border border-slate-600/60 transition text-left flex flex-col">
-                        <span class="font-bold text-indigo-400">👤 Admin Toko</span>
-                        <span class="text-[10px] text-slate-400">Akses Penuh</span>
+                        <span class="font-bold text-indigo-400">👤 Admin (richadganteng)</span>
+                        <span class="text-[10px] text-slate-400">PW: richad ganteng</span>
                     </button>
-                    <button type="button" onclick="fillLogin('kasir@smartpos.test', 'password')" 
+                    <button type="button" onclick="fillLogin('kasir@smartpos.test', 'richad ganteng')" 
                             class="p-2.5 rounded-lg bg-slate-700/50 hover:bg-slate-700 text-slate-200 border border-slate-600/60 transition text-left flex flex-col">
                         <span class="font-bold text-emerald-400">🛒 Kasir POS</span>
-                        <span class="text-[10px] text-slate-400">Transaksi & Struk</span>
+                        <span class="text-[10px] text-slate-400">PW: richad ganteng</span>
                     </button>
                 </div>
 
