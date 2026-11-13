@@ -88,15 +88,15 @@
             <div class="mt-6 pt-6 border-t border-slate-700/60 text-center">
                 <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-3">Akun Uji Coba Demo:</p>
                 <div class="grid grid-cols-2 gap-2 text-xs">
-                    <button type="button" onclick="fillLogin('richadganteng', 'richad ganteng')" 
+                    <button type="button" onclick="fillLogin('richadganteng', 'richadganteng')" 
                             class="p-2.5 rounded-lg bg-slate-700/50 hover:bg-slate-700 text-slate-200 border border-slate-600/60 transition text-left flex flex-col">
                         <span class="font-bold text-indigo-400">👤 Admin (richadganteng)</span>
-                        <span class="text-[10px] text-slate-400">PW: richad ganteng</span>
+                        <span class="text-[10px] text-slate-400">PW: richadganteng</span>
                     </button>
-                    <button type="button" onclick="fillLogin('kasir@smartpos.test', 'richad ganteng')" 
+                    <button type="button" onclick="fillLogin('kasir@smartpos.test', 'richadganteng')" 
                             class="p-2.5 rounded-lg bg-slate-700/50 hover:bg-slate-700 text-slate-200 border border-slate-600/60 transition text-left flex flex-col">
                         <span class="font-bold text-emerald-400">🛒 Kasir POS</span>
-                        <span class="text-[10px] text-slate-400">PW: richad ganteng</span>
+                        <span class="text-[10px] text-slate-400">PW: richadganteng</span>
                     </button>
                 </div>
 
